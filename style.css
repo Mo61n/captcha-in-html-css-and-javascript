@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  background: url(/imag.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+#captchaBackground {
+  height: 320px;
+  width: 350px;
+  border-radius: 5px;
+  margin-top: 105px;
+  background-color: #2d3748de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#captchaHeading {
+  color: white;
+}
+
+#captcha {
+  height: 80%;
+  width: 80%;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: auto;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.center {
+  position: relative;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submitButton {
+  color: white;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #169c16;
+  border: 0px;
+  font-weight: bold;
+}
+
+#refreshButton {
+  color: white;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #169c16;
+  border: 0px;
+  font-weight: bold;
+}
+
+#textBox {
+  position: relative;
+  height: 35px;
+  top: -40px;
+  border-radius: 5px;
+  border: 1px solid rgb(68, 61, 61);
+  text-align: center;
+  font-size: 15px;
+}
+
+#textBox:focus {
+  background-color: rgb(243, 243, 243);
+  border: none;
+  overflow: hidden;
+}
+
+.incorrectCaptcha {
+  color: #ff0000;
+}
+
+.correctCaptcha {
+  color: #7fff00;
+}
