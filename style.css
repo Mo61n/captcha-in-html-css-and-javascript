@@ -1,92 +1,92 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-body {
-  background: url(/imag.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  font-family: "Roboto", sans-serif;
-  overflow: hidden;
-}
-
-#captchaBackground {
-  height: 320px;
-  width: 350px;
-  border-radius: 5px;
-  margin-top: 105px;
-  background-color: #2d3748de;
+/* Center the parent div */
+.center {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
 }
 
-#captchaHeading {
-  color: white;
+/* Style the captcha background and canvas */
+#captchaBackground {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 
 #captcha {
-  height: 80%;
-  width: 80%;
-  font-size: 30px;
-  letter-spacing: 3px;
-  margin: auto;
   display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin: auto;
+  background: linear-gradient(to right, #e91e63, #9c27b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
 }
 
-.center {
-  position: relative;
-  top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Style the text box and buttons */
+#textBox {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid;
+  outline: none;
+  border-radius: 50px;
+  font-size: 2em;
+  color: #777;
+  background-color: #fff;
+  width: 80%;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#textBox:hover {
+  border: none;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 
 #submitButton {
-  color: white;
-  width: 80px;
-  height: 30px;
-  border-radius: 10px;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  background-color: #169c16;
-  border: 0px;
-  font-weight: bold;
+  background-color: #1e88e5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 50px;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+#submitButton:hover {
+  background-color: #1976d2;
+  transform: scale(1.02);
 }
 
 #refreshButton {
-  color: white;
-  width: 80px;
-  height: 30px;
-  border-radius: 10px;
-  background-color: #169c16;
-  border: 0px;
-  font-weight: bold;
-}
-
-#textBox {
-  position: relative;
-  height: 35px;
-  top: -40px;
-  border-radius: 5px;
-  border: 1px solid rgb(68, 61, 61);
-  text-align: center;
-  font-size: 15px;
-}
-
-#textBox:focus {
-  background-color: rgb(243, 243, 243);
+  background-color: #f9f9f9;
+  color: #777;
+  padding: 10px 20px;
   border: none;
-  overflow: hidden;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 50px;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 
-.incorrectCaptcha {
-  color: #ff0000;
+#refreshButton:hover {
+  background-color: #eee;
+  color: #555;
+  transform: scale(1.02);
 }
 
-.correctCaptcha {
-  color: #7fff00;
+/* Style the output span */
+#output {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #777;
+  text-align: center;
 }
