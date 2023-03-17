@@ -1,9 +1,7 @@
-
-
 let captchaText = document.querySelector('#captcha');
 var ctx = captchaText.getContext("2d");
 ctx.font = "30px Roboto";
-ctx.fillStyle = "#fbff00";
+ctx.fillStyle = "#000";
 
 
 let userText = document.querySelector('#textBox');
